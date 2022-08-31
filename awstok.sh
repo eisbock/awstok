@@ -24,7 +24,7 @@
 # The easiest way to use this is to add a funtion to your .bashrc as follows:
 #
 #   export AWS_MFA_ARN='arn:aws:iam::###:mfa/NAME'  # see first echo, below
-#   awstok() { eval "$(awstok.sh)" }
+#   awstok() { eval "$(awstok.sh)"; }
 #
 
 if [[ -z "$AWS_MFA_ARN" ]]; then

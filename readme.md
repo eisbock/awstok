@@ -10,7 +10,7 @@ live (i.e. not a subshell). The easiest way to do this is to put `awstok.sh`
 in your path, and add this to your `.bashrc` file:
 ```
 export AWS_MFA_ARN='arn:aws:iam::###:mfa/NAME'
-awstok() { eval "$(awstok.sh)" }
+awstok() { eval "$(awstok.sh)"; }
 ```
 The value for the `AWS_MFA_ARN` var for your user can be found on your user's
 AWS IAM page once you have setup MFA.
